@@ -1,0 +1,104 @@
+/* ========== Cart Page Styles ========== */
+.cartPage {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  padding: 40px;
+}
+
+/* ========== Cart Table Styles ========== */
+.cartTable {
+  overflow-x: auto;
+}
+
+.cartTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cartTable th,
+.cartTable td {
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.row {
+  background: #f9f1e7;
+}
+
+.emptyCartMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 39px;
+}
+
+/* ========== Product Info Styles ========== */
+.productInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.productInfo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+/* ========== Cart Totals Styles ========== */
+
+.cartTotals {
+  padding: 20px;
+  background: #f9f1e7;
+  border-radius: 10px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 18px;
+}
+.TotalNumber {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+/* ========== Checkout Button Styles ========== */
+.checkoutBtn {
+  width: 169px;
+  padding: 14px;
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid;
+  cursor: pointer;
+  font-weight: 900;
+  border-radius: 10px;
+}
+.checkoutBtn:hover {
+  color: white;
+  background-color: #000000;
+}
+
+/* ========== Remove Item Button Styles ========== */
+
+.removeItemBtn {
+  width: 19px;
+  height: 21px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ========== Responsive Styles ========== */
+@media (max-width: 768px) {
+  .cartPage {
+    grid-template-columns: 1fr;
+  }
+  .productInfo {
+    display: inline-block;
+  }
+}

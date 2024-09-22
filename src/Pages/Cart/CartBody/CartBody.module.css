@@ -1,0 +1,48 @@
+.emptyCartdata {
+  padding: 0 !important;
+}
+
+.emptyCartMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.emptyCartMessage p {
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+.goShopping {
+  color: blue !important;
+  font-weight: 600 !important;
+}
+
+.goShopping:hover {
+  opacity: 70%;
+}
+
+.quantityBtn {
+  height: 39px;
+  border: 1px solid #9f9f9f;
+  padding: 5px;
+  width: 41px;
+  background: transparent;
+  border-radius: 12px;
+}
+
+.deleteBtn {
+  background-color: transparent;
+  border: none;
+}
+
+/* ========== Responsive Styles ========== */
+@media (max-width: 768px) {
+  /* .emptyCartMessage {
+    flex-direction: column;
+  } */
+  td {
+    padding: 0 !important;
+  }
+}

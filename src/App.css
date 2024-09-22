@@ -1,0 +1,15 @@
+/* ========== global style ========== */
+/* ========== anchor yag ========== */
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+/* ========== spinner ========== */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}

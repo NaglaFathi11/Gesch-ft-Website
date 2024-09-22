@@ -1,0 +1,17 @@
+.Counter {
+  background: transparent;
+  width: 92px;
+  border: 1px solid #9f9f9f;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  gap: 13px;
+}
+
+.Counter button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
