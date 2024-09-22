@@ -1,5 +1,5 @@
 function CurrencyFormatter() {
-  const currencyFormatter = new Intl.NumberFormat(undefined, {
+  const currencyFormatter = new Intl.NumberFormat("en-US", {
     currency: "USD",
     style: "currency",
     currencyDisplay: "symbol",
