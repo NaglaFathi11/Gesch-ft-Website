@@ -147,6 +147,7 @@
 
 .cartButton:hover {
   background: black;
+  color: white;
 }
 
 .cartButtonWrapper a:hover {

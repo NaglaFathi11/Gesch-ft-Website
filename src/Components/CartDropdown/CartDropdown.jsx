@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useCartStore } from "../../Store";
 import CartDropdownStyle from "./CartDropdown.module.css";
 
@@ -10,9 +10,18 @@ function CartDropdown({ updateIsCartOpen, UpdateNavbarActive }) {
   const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
   const roundedNumber = parseFloat(total.toFixed(2));
 
-  const handleLinkClick = () => {
+  const navigate = useNavigate();
+  // Close the menu navbar and the cart-drop-down
+  const handleGoToShop = () => {
     updateIsCartOpen(false);
     UpdateNavbarActive(false);
+    navigate("/shop");
+  };
+
+  const handleGoToCart = () => {
+    updateIsCartOpen(false);
+    UpdateNavbarActive(false);
+    navigate("/cart");
   };
 
   return (
@@ -36,23 +45,23 @@ function CartDropdown({ updateIsCartOpen, UpdateNavbarActive }) {
               />
               <p>
                 No products in the cart{" "}
-                <Link
+                <span
                   to="/shop"
                   className={CartDropdownStyle.goShopping}
-                  onClick={handleLinkClick}
+                  onClick={handleGoToShop}
                 >
                   Go Shoopping
-                </Link>
+                </span>
               </p>
             </div>
             <div className={CartDropdownStyle.cartButtonWrapper}>
-              <Link
+              <button
                 to="/cart"
                 className={CartDropdownStyle.cartButton}
-                onClick={handleLinkClick}
+                onClick={handleGoToCart}
               >
                 Cart
-              </Link>
+              </button>
             </div>
           </div>
         </div>
@@ -65,7 +74,7 @@ function CartDropdown({ updateIsCartOpen, UpdateNavbarActive }) {
                 className={CartDropdownStyle.closeIcon}
                 src="/assets/cart-drop-down/close.svg"
                 alt="Close-Icon"
-                onClick={handleLinkClick}
+                onClick={() => updateIsCartOpen(false)}
               />
             </div>
             <ul className={CartDropdownStyle.cartItems}>
@@ -102,13 +111,13 @@ function CartDropdown({ updateIsCartOpen, UpdateNavbarActive }) {
               <p>Rs. {roundedNumber}</p>
             </div>
             <div className={CartDropdownStyle.cartButtonWrapper}>
-              <Link
+              <button
                 to="/cart"
                 className={CartDropdownStyle.cartButton}
-                onClick={handleLinkClick}
+                onClick={handleGoToCart}
               >
                 Cart
-              </Link>
+              </button>
             </div>
           </div>
         </div>
