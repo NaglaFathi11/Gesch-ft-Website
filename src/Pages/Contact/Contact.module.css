@@ -80,12 +80,6 @@ textarea.inputError {
   border: 1px solid red;
 }
 
-/* input[type="text"].inputSuccess,
-input[type="email"].inputSuccess,
-textarea.inputSuccess {
-  border: 1px solid green;
-} */
-
 /* Responsive styles */
 @media (min-width: 768px) {
   .contactContainer {

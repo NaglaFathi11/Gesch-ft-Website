@@ -7,7 +7,7 @@ import CurrencyFormatter from "../../../Components/CurrencyFornatter/CurrencyFor
 
 function CartBody() {
   const { cart, removeFromCart } = useCartStore();
-  console.log("Cart data in CartBody:", cart);
+  // console.log("Cart data in CartBody:", cart);
 
   const formatCurrency = CurrencyFormatter();
 

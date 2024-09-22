@@ -48,7 +48,7 @@
   gap: 20px;
   list-style: none;
   padding: 20px;
-  background-color: #f8f8f8; /* Background similar to the design */
+  background-color: #f8f8f8;
 }
 
 /* Product Item styling */
@@ -58,7 +58,7 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   transition: transform 0.3s ease;
-  background-color: #fff; /* White background for each item */
+  background-color: #fff;
 }
 .productItem a {
   display: inline-block;
@@ -130,27 +130,6 @@
 .pagination li {
   margin: 0 5px;
 }
-@media (max-width: 600px) {
-  .breadcrumbShopWrapper {
-    height: 220px;
-    justify-content: flex-start;
-    padding-top: 35px;
-  }
-
-  .breadcrumbShopWrapper h5 {
-    font-size: 30px;
-  }
-
-  .products ul {
-    grid-template-columns: 1fr; /* عمود واحد للشاشات الصغيرة جداً */
-  }
-  .pagination {
-    flex-wrap: wrap;
-  }
-  .pagination li {
-    margin: 22px 5px;
-  }
-}
 
 .pagination li a {
   padding: 8px 12px;
@@ -173,24 +152,43 @@
 /* Media queries for responsiveness */
 @media (max-width: 1200px) {
   .products ul {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 900px) {
   .products ul {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
   .products ul {
-    grid-template-columns: 1fr; /* 1 column on the smallest screens */
+    grid-template-columns: 1fr;
   }
   .pagination {
     flex-wrap: wrap;
   }
   .paginationItem {
+    margin: 22px 5px;
+  }
+  .breadcrumbShopWrapper {
+    height: 220px;
+    justify-content: flex-start;
+    padding-top: 35px;
+  }
+
+  .breadcrumbShopWrapper h5 {
+    font-size: 30px;
+  }
+
+  .products ul {
+    grid-template-columns: 1fr;
+  }
+  .pagination {
+    flex-wrap: wrap;
+  }
+  .pagination li {
     margin: 22px 5px;
   }
 }
