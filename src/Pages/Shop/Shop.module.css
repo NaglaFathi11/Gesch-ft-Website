@@ -133,6 +133,8 @@
 @media (max-width: 600px) {
   .breadcrumbShopWrapper {
     height: 220px;
+    justify-content: flex-start;
+    padding-top: 35px;
   }
 
   .breadcrumbShopWrapper h5 {
