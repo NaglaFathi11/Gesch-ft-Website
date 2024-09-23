@@ -158,6 +158,7 @@
 @media (max-width: 768px) {
   .cartDropdown {
     width: 100%;
+    overflow: hidden;
   }
   .cartButton {
     width: 23%;
