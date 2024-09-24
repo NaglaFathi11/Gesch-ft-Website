@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useCartStore } from "../../Store";
 import CartDropdownStyle from "./CartDropdown.module.css";
+import CurrencyFormatter from "../../Components/CurrencyFornatter/CurrencyFornatter";
 
 function CartDropdown({ updateIsCartOpen, UpdateNavbarActive }) {
   const { cart, removeFromCart } = useCartStore();
@@ -23,6 +24,8 @@ function CartDropdown({ updateIsCartOpen, UpdateNavbarActive }) {
     UpdateNavbarActive(false);
     navigate("/cart");
   };
+
+  const formatCurrency = CurrencyFormatter();
 
   return (
     <>
@@ -95,7 +98,9 @@ function CartDropdown({ updateIsCartOpen, UpdateNavbarActive }) {
                     <span>{item.quantity} x </span>
 
                     <span className={CartDropdownStyle.price}>
-                      Rs. {parseFloat((item.quantity * item.price).toFixed(2))}
+                      {formatCurrency(
+                        parseFloat((item.quantity * item.price).toFixed(2))
+                      )}
                     </span>
                   </div>
                   <img
@@ -108,7 +113,7 @@ function CartDropdown({ updateIsCartOpen, UpdateNavbarActive }) {
             </ul>
             <div className={CartDropdownStyle.cartSubtotal}>
               <h4>Subtotal</h4>
-              <p>Rs. {roundedNumber}</p>
+              <p> {formatCurrency(roundedNumber)}</p>
             </div>
             <div className={CartDropdownStyle.cartButtonWrapper}>
               <button
