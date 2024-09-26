@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useCartStore } from "../../Store";
 import CartDropdownStyle from "./CartDropdown.module.css";
 import CurrencyFormatter from "../../Components/CurrencyFornatter/CurrencyFornatter";
@@ -48,13 +48,13 @@ function CartDropdown({ updateIsCartOpen, UpdateNavbarActive }) {
               />
               <p>
                 No products in the cart{" "}
-                <span
+                <Link
                   to="/shop"
                   className={CartDropdownStyle.goShopping}
                   onClick={handleGoToShop}
                 >
                   Go Shoopping
-                </span>
+                </Link>
               </p>
             </div>
             <div className={CartDropdownStyle.cartButtonWrapper}>
