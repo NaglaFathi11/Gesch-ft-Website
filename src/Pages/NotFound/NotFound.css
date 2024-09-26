@@ -3,32 +3,32 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* اجعل الصفحة تأخذ كل ارتفاع الشاشة */
-  background-color: #f8d7da; /* لون خلفية هادئ */
-  color: #721c24; /* لون النص */
+  height: 100vh;
+  background-color: #f8d7da;
+  color: #721c24;
   text-align: center;
-  font-family: Arial, sans-serif; /* نوع الخط */
+  font-family: Arial, sans-serif;
 }
 
 .not-found-title {
-  font-size: 3rem; /* حجم الخط للعنوان */
-  margin-bottom: 1rem; /* المسافة بين العنوان والرسالة */
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .not-found-message {
-  font-size: 1.5rem; /* حجم الخط للرسالة */
-  margin-bottom: 2rem; /* المسافة بين الرسالة والرابط */
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .not-found-link {
-  padding: 0.75rem 1.5rem; /* padding للرابط */
-  background-color: #007bff; /* لون خلفية الرابط */
-  color: #fff; /* لون النص */
-  text-decoration: none; /* إزالة الخط السفلي */
-  border-radius: 5px; /* زوايا دائرية */
-  transition: background-color 0.3s ease; /* تأثير عند التمرير */
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .not-found-link:hover {
-  background-color: #0056b3; /* لون الخلفية عند التمرير */
+  background-color: #0056b3;
 }
