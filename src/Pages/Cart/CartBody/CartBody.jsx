@@ -52,11 +52,11 @@ function CartBody() {
                   />
                 </td>
                 <td data-title="Product">
-                  <h4>
+                  <span>
                     {item.title
                       ? item.title.split(/\s+|-/).slice(0, 2).join(" ")
                       : "No Title Available"}
-                  </h4>
+                  </span>
                 </td>
 
                 <td data-title="Price">
