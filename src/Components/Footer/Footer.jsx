@@ -99,7 +99,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>2024 Funiro. All rights reserved</p>
+          <p>2024 Geschäft. All rights reserved</p>
         </div>
       </div>
     </footer>
