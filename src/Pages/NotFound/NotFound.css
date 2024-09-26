@@ -1,0 +1,34 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* اجعل الصفحة تأخذ كل ارتفاع الشاشة */
+  background-color: #f8d7da; /* لون خلفية هادئ */
+  color: #721c24; /* لون النص */
+  text-align: center;
+  font-family: Arial, sans-serif; /* نوع الخط */
+}
+
+.not-found-title {
+  font-size: 3rem; /* حجم الخط للعنوان */
+  margin-bottom: 1rem; /* المسافة بين العنوان والرسالة */
+}
+
+.not-found-message {
+  font-size: 1.5rem; /* حجم الخط للرسالة */
+  margin-bottom: 2rem; /* المسافة بين الرسالة والرابط */
+}
+
+.not-found-link {
+  padding: 0.75rem 1.5rem; /* padding للرابط */
+  background-color: #007bff; /* لون خلفية الرابط */
+  color: #fff; /* لون النص */
+  text-decoration: none; /* إزالة الخط السفلي */
+  border-radius: 5px; /* زوايا دائرية */
+  transition: background-color 0.3s ease; /* تأثير عند التمرير */
+}
+
+.not-found-link:hover {
+  background-color: #0056b3; /* لون الخلفية عند التمرير */
+}
