@@ -67,7 +67,9 @@ export default function Shop() {
                 </div>
                 <div className={ShopStyle.productDetails}>
                   <Link
-                    to={`/shop/Product/${product.id}/${product.title}`}
+                    to={`/shop/Product/${product.id}/${encodeURIComponent(
+                      product.title
+                    )}`}
                     className={ShopStyle.productTitle}
                   >
                     {product.title}
