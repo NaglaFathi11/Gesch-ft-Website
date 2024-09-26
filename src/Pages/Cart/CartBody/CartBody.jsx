@@ -43,26 +43,33 @@ function CartBody() {
           <tbody>
             {cart.map((item) => (
               <tr key={item.id}>
-                <td className={cartStyle.productInfo}>
-                  <img src={item.image} alt={item.title} />
+                <td className={CartBodyStyle.productImgWrapper}>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className={CartBodyStyle.productImg}
+                  />
+                </td>
+                <td data-title="Product">
                   <h4>
                     {item.title
                       ? item.title.split(/\s+|-/).slice(0, 2).join(" ")
                       : "No Title Available"}
                   </h4>
                 </td>
-                <td>
+
+                <td data-title="Price">
                   <span>{formatCurrency(item.price)}</span>
                 </td>
-                <td>
+                <td data-title="Quantity">
                   <button className={CartBodyStyle.quantityBtn}>
                     <span>{item.quantity}</span>
                   </button>
                 </td>
-                <td>
+                <td data-title="Subtotal">
                   <span>{formatCurrency(item.price * item.quantity)}</span>
                 </td>
-                <td>
+                <td data-title="Delete">
                   <button
                     className={CartBodyStyle.deleteBtn}
                     onClick={() => removeFromCart(item.id)}
