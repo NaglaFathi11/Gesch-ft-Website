@@ -33,7 +33,8 @@ function CartBody() {
         <>
           <thead>
             <tr className={cartStyle.row}>
-              <th>Product</th>
+              <th>Product Image</th>
+              <th>Product Name</th>
               <th>Price</th>
               <th>Quantity</th>
               <th>Subtotal</th>
