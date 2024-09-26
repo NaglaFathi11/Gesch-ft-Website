@@ -51,7 +51,7 @@ function CartBody() {
                     className={CartBodyStyle.productImg}
                   />
                 </td>
-                <td data-title="Product">
+                <td data-title="Product Name">
                   <span>
                     {item.title
                       ? item.title.split(/\s+|-/).slice(0, 2).join(" ")
