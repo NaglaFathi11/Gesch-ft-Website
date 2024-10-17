@@ -43,7 +43,7 @@ function CartDropdown({ updateIsCartOpen, UpdateNavbarActive }) {
             </div>
             <div className={CartDropdownStyle.message}>
               <img
-                src="/assets/cart-drop-down/cart-empty.png"
+                src="/assets/cart-drop-down/cart-empty.webp"
                 alt="cart-empty"
               />
               <p>

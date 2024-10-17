@@ -42,7 +42,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React, { Suspense } from "react";
 
-// Lazy loading للصفحات
+// Lazy loading
 const Home = React.lazy(() => import("./Pages/Home/Home"));
 const Shop = React.lazy(() => import("./Pages/Shop/Shop"));
 const SingleProduct = React.lazy(() =>
