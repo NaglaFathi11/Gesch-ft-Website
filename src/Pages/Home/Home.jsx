@@ -19,6 +19,8 @@ export default function Home() {
           alt="Categories-bg-1"
           // loading="lazy"
           className={HomeStyle.backgroundImg}
+          width="708"
+          height="843"
         />
         <h2 className={HomeStyle.h2}>
           <span>Explore</span> <br /> Our Categories
