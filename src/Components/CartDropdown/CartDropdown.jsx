@@ -78,6 +78,7 @@ function CartDropdown({ updateIsCartOpen, UpdateNavbarActive }) {
                 src="/assets/cart-drop-down/close.webp"
                 alt="Close-Icon"
                 onClick={() => updateIsCartOpen(false)}
+                loading="lazy"
               />
             </div>
             <ul className={CartDropdownStyle.cartItems}>
