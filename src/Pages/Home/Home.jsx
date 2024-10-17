@@ -17,7 +17,7 @@ export default function Home() {
         <img
           src="/assets/categories/bg.webp"
           alt="Categories-bg-1"
-          loading="lazy"
+          // loading="lazy"
           className={HomeStyle.backgroundImg}
         />
         <h2 className={HomeStyle.h2}>
