@@ -22,7 +22,7 @@ function SuccessfulMessage({ successfulMessage, updateSuccessfulMessage }) {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="successfulMessage"
         >
-          <img src="/assets/contact/checked.png" alt="checked" />
+          <img src="/assets/contact/checked.webp" alt="checked" />
           <h3>Thank you!</h3>
           <p>Your submission has been sent.</p>
         </motion.div>

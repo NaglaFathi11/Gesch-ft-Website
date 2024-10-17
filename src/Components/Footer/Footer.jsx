@@ -8,25 +8,25 @@ export default function Footer() {
       id: 1,
       title: "High Quality",
       description: "crafted from top materials",
-      img: "/assets/footer/highQuality.png",
+      img: "/assets/footer/highQuality.webp",
     },
     {
       id: 2,
       title: "Warranty Protection",
       description: "Over 2 years",
-      img: "/assets/footer/Warranty-Protection.png",
+      img: "/assets/footer/Warranty-Protection.webp",
     },
     {
       id: 3,
       title: "Free Shipping",
       description: "Order over 150 $",
-      img: "/assets/footer/Free-Shipping.png",
+      img: "/assets/footer/Free-Shipping.webp",
     },
     {
       id: 4,
       title: "24 / 7 Support",
       description: "Dedicated support",
-      img: "/assets/footer/Support.png",
+      img: "/assets/footer/Support.webp",
     },
   ]);
 
@@ -50,7 +50,12 @@ export default function Footer() {
           return (
             <div key={item.id} className="itemWrapper">
               <div className="img">
-                <img src={item.img} alt={item.title} />
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  width="50px"
+                  height="50px"
+                />
               </div>
               <div className="text">
                 <h3>{item.title}</h3>

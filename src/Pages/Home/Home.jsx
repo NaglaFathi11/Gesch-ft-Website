@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <section className={HomeStyle.background}>
         <img
-          src="/assets/categories/bg.png"
+          src="/assets/categories/bg.webp"
           alt="Categories-bg-1"
           loading="lazy"
           className={HomeStyle.backgroundImg}

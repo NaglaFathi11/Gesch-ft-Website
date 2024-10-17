@@ -26,9 +26,9 @@ export default function SingleProduct() {
   ]);
 
   const [socialShare] = useState([
-    { id: 1, img: "/assets/single-product/facebook.svg" },
-    { id: 2, img: "/assets/single-product/linkedin.svg" },
-    { id: 3, img: "/assets/single-product/twitter.svg" },
+    { id: 1, img: "/assets/single-product/facebook.webp" },
+    { id: 2, img: "/assets/single-product/linkedin.webp" },
+    { id: 3, img: "/assets/single-product/twitter.webp" },
   ]);
 
   const { id } = useParams();
@@ -113,7 +113,12 @@ export default function SingleProduct() {
                   <strong>Share:</strong>
                   {socialShare.map((item) => (
                     <a href="#" key={item.id}>
-                      <img src={item.img} alt={item.img} />
+                      <img
+                        src={item.img}
+                        alt={item.img}
+                        width="20px"
+                        height="20px"
+                      />
                     </a>
                   ))}
                 </div>

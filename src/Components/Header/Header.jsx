@@ -34,7 +34,7 @@ export default function Header() {
   return (
     <div className={HeaderStyle.header}>
       <div className={HeaderStyle.logo}>
-        <img src="/assets/header/Logo.svg" alt="Logo" />
+        <img src="/assets/header/Logo.webp" alt="Logo" />
         <h3>
           <Link to="/">Geschäft</Link>
         </h3>
@@ -43,15 +43,15 @@ export default function Header() {
       <div className={HeaderStyle.hamburger} onClick={toggleMenu}>
         {/* <img src="/assets/menu.png" alt="menu" style={{ width: "40px" }} /> */}
         <img
-          src="/assets/header/menueBar.png"
+          src="/assets/header/menueBar.webp"
           alt="menu-bar"
-          style={{ width: "40px" }}
+          style={{ width: "40px", height: "40px" }}
         />
       </div>
       {/* Navbar and Cart combined in a single menu */}
       <div className={isActive ? HeaderStyle.navBarActive : HeaderStyle.navBar}>
         <button onClick={closeNavBar} className={HeaderStyle.closeIcon}>
-          <img src="/assets/header/close.png" alt="close-icon" />
+          <img src="/assets/header/close.webp" alt="close-icon" />
         </button>
         <nav onClick={() => setIsActive(false)}>
           <Link to="/">Home</Link>
@@ -59,7 +59,7 @@ export default function Header() {
           <Link to="/contact">Contact</Link>
         </nav>
         <div className={HeaderStyle.cartIcon} onClick={toggleCart}>
-          <img src="/assets/header/shopping-bag.png" alt="shopping-cart" />
+          <img src="/assets/header/shopping-bag.webp" alt="shopping-cart" />
           <Badge />
         </div>
         {/* Cart Dropdown */}

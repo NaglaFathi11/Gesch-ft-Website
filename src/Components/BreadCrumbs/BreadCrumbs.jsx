@@ -1,6 +1,6 @@
 import styles from "./Breadcrumbs.module.css";
 import { NavLink, useLocation, useParams } from "react-router-dom";
-import arrow from "/assets/arrow-up.png";
+import arrow from "/assets/arrow-up.webp";
 
 const Breadcrumb = ({ title }) => {
   const { pathname } = useLocation();
@@ -25,7 +25,7 @@ const Breadcrumb = ({ title }) => {
             </NavLink>
           </li>
           <li>
-            <img src={arrow} alt="arrow icon" />
+            <img src={arrow} alt="arrow icon" width="20px" height="20px" />
           </li>
           {pathname === `/shop` ||
           decodeURIComponent(pathname) === `/shop/${category}` ||

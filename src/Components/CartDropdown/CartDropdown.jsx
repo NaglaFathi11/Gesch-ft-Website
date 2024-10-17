@@ -36,7 +36,7 @@ function CartDropdown({ updateIsCartOpen, UpdateNavbarActive }) {
               <h2>Shopping Cart</h2>
               <img
                 className={CartDropdownStyle.closeIcon}
-                src="/assets/cart-drop-down/close.svg"
+                src="/assets/cart-drop-down/close.webp"
                 alt="Close-Icon"
                 onClick={() => updateIsCartOpen(false)}
               />
@@ -75,7 +75,7 @@ function CartDropdown({ updateIsCartOpen, UpdateNavbarActive }) {
               <h2>Shopping Cart</h2>
               <img
                 className={CartDropdownStyle.closeIcon}
-                src="/assets/cart-drop-down/close.svg"
+                src="/assets/cart-drop-down/close.webp"
                 alt="Close-Icon"
                 onClick={() => updateIsCartOpen(false)}
               />

@@ -62,6 +62,9 @@ export default function Shop() {
                       src={product.image}
                       alt={product.title}
                       className={ShopStyle.productImage}
+                      loading="lazy"
+                      width="200"
+                      height="200"
                     />
                   </div>
                 </div>

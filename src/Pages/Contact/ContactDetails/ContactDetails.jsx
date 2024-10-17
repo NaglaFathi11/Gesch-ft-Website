@@ -5,19 +5,19 @@ function ContactDetails() {
   const [contactData] = useState([
     {
       id: 1,
-      img: "/assets/contact/address.svg",
+      img: "/assets/contact/address.webp",
       title: "Address",
       description: "236 5th SE Avenue, New York NY10000, United States",
     },
     {
       id: 2,
-      img: "/assets/contact/phone.svg",
+      img: "/assets/contact/phone.webp",
       title: "Phone",
       description: "Mobile: +1 (84) 546-6789, Hotline: +1 (84) 456-6789",
     },
     {
       id: 3,
-      img: "/assets/contact/clock.svg",
+      img: "/assets/contact/clock.webp",
       title: "Working Time",
       description: "Monday-Friday: 9:00 - 22:00, Saturday-Sunday: 9:00 - 21:00",
     },
