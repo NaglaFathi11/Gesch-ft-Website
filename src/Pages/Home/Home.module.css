@@ -1,12 +1,16 @@
 /* ========== Background Section ========== */
 .background {
   position: relative;
+  display: flex; /* لجعل العنصر الأب flexbox */
+  justify-content: center; /* لتوسيط الصورة أفقياً */
+  align-items: center; /* لتوسيط الصورة عمودياً */
+  overflow: hidden; /* لمنع أي جزء من الصورة من الخروج من الحاوية */
 }
 
 .background .backgroundImg {
-  width: 60%;
-  height: 455px;
-  object-fit: contain;
+  max-width: 100%; /* لا تتجاوز عرض العنصر الأب */
+  height: auto; /* اجعل الارتفاع تلقائي */
+  object-fit: cover; /* الحفاظ على نسبة الطول إلى العرض مع التغطية */
 }
 
 /* ========== Content Section ========== */
@@ -29,6 +33,7 @@
   top: 39%;
   font-weight: 200;
 }
+
 .h2 span {
   font-size: 53px;
   font-weight: 400;
@@ -85,6 +90,6 @@
   }
 
   .background .backgroundImg {
-    width: 90%;
+    max-width: 90%; /* اجعل العرض 90% على الشاشات الصغيرة */
   }
 }
